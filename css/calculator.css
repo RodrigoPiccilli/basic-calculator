@@ -1,0 +1,285 @@
+body {
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: center;
+    margin-top: 10em;
+}
+
+body.wolfpack {
+    background-image: url("../images/wolfpack.jpg");
+    background-size: cover;
+}
+
+input {
+    outline: none;
+    border: none;
+}
+
+input::placeholder {
+    color: white;
+    opacity: 50%;
+}
+
+#calculator {  
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: .2fr 1fr;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "calculator-display"
+      "calculator-commands";  
+    background-color: rgba(100, 100, 100,1);
+    padding: 20px;
+    box-shadow: 
+        inset 5px 5px 10px rgba(0, 0, 0, 0.2),  
+        5px 5px 15px rgba(0, 0, 0, 0.3);    
+
+    margin-right: 30px;
+}
+
+#calculator.wolfpack {
+    border-top: 10px solid rgb(255, 100, 100);
+    border-left: 10px solid rgb(255, 100, 100);
+    border-right: 10px solid rgb(150, 0, 0);
+    border-bottom: 10px solid rgb(150, 0, 0);
+}
+
+#calculator-input {
+    grid-area: calculator-display;
+    display: flex;
+    margin-left: 5px;
+    border-bottom: 2px solid black; 
+}
+
+#calculator-commands {  
+    grid-area: calculator-commands; 
+    display: grid;
+    grid-template-columns: .2fr .2fr .2fr .2fr;
+    grid-template-rows: 1fr;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "c1 c2 c3 c4";
+}
+
+#calculator-input input {
+    text-align: right;
+    color: white;
+    border: none;
+    font-size: 50px;
+    margin: 0px 10px;
+    flex: 1;
+    width: 200px;
+    background-color: transparent;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: -5px;
+}
+
+li {
+    margin: 5px;
+}
+
+#calculator-commands button {
+    border: 2px black solid;
+    width: 60px;
+    height: 60px;
+    border-radius: 70%;
+    background-color: rgb(201, 201, 201);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-shadow: 5px 5px 1px rgb(0, 0, 0);
+    font-size: 30px;
+    cursor: pointer;
+
+}
+
+#calculator-commands #random{
+    font-size: 20px;
+}
+
+#calculator-commands .button-input {
+    background-color: rgb(86, 86, 86);
+}
+
+#calculator-commands button:hover{
+    background-color: rgb(86, 86, 86);
+
+}
+
+#calculator-commands button:active {
+    background-color: rgb(54, 54, 54);
+    color: white;
+}
+
+/*** CALCULATOR HISTORY ***/
+
+#history.collapse {
+    display: none;
+}
+
+#history {  
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr .2fr;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "history-display"
+      "clear-history";  
+    background-color: rgba(100, 100, 100, 1);
+    padding: 20px;
+    
+    box-shadow: 
+        inset 5px 5px 10px rgba(0, 0, 0, 0.2),  
+        5px 5px 15px rgba(0, 0, 0, 0.3); 
+
+    width: 300px;
+
+    flex-shrink: 0;
+
+    margin-left: 30px;
+            
+}
+
+#history.wolfpack {
+    border-top: 10px solid rgb(255, 100, 100);
+    border-left: 10px solid rgb(255, 100, 100);
+    border-right: 10px solid rgb(150, 0, 0);
+    border-bottom: 10px solid rgb(150, 0, 0);
+}
+
+
+#history-display {
+    grid-area: history-display;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    height: 320px;
+    font-size: 40px;
+}
+
+#history-display.wolfpack div {
+    background-color: #CC0000;
+    cursor: pointer;
+    padding: 7px 0px;
+    padding-left: 10px;
+
+    border-top: 2px solid rgb(255, 100, 100);
+    border-left: 2px solid rgb(255, 100, 100);
+    border-right: 2px solid rgb(150, 0, 0);
+    border-bottom: 2px solid rgb(150, 0, 0);
+
+}
+
+#history-display.wolfpack div:hover {
+    background-color: #ff2d2d;
+}
+
+#history-display.wolfpack div:active {
+    background-color: rgb(255, 100, 100);
+}
+
+#history-display.wolfpack .stripe{
+    background-color: rgb(180, 180, 180); 
+    font-size: 40px;
+    padding-left: 10px;
+
+    border-top: 2px solid rgb(201, 201, 201);
+    border-left: 2px solid rgb(201, 201, 201);
+    border-right: 2px solid rgb(90, 90, 90);
+    border-bottom: 2px solid rgb(90, 90, 90);
+}
+
+#history-display.wolfpack .stripe:hover{
+    background-color: gray;
+}
+
+#history-display.wolfpack .stripe:active{
+    background-color: rgb(255, 100, 100, .5);
+}
+
+#clear-history {
+    grid-area: clear-history;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+#clear-history button {
+    border: 2px black solid;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-shadow: 5px 5px 1px rgb(0, 0, 0);
+    font-size: 30px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+#clear-history.wolfpack button {
+    background-color: #CC0000;
+}
+
+
+#clear-history.wolfpack button:hover {
+    background-color: #ff2d2d;
+}
+
+#clear-history.wolfpack button:active {
+    background-color: rgb(197, 75, 75);
+}
+
+/** SETTINGS MENU ***/
+
+#settings-menu {
+
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    background-color: gray;
+    padding: 0px 20px 10px 20px;
+    display: flex;
+    justify-content: right;
+    flex-direction: column;
+    align-items: end;
+    color:rgba(255, 255, 255, 0.938);
+
+}
+
+#settings-menu.wolfpack {
+    border-top: 10px solid rgb(255, 100, 100);
+    border-left: 10px solid rgb(255, 100, 100);
+    border-right: 10px solid rgb(150, 0, 0);
+    border-bottom: 10px solid rgb(150, 0, 0);
+}
+
+#settings-menu form {
+
+    padding-top: 20px;
+    display: flex;
+    justify-content: right;
+    flex-direction: column;
+    align-items: end;
+
+}
+
+#show-history.wolfpack {
+    accent-color: rgb(255, 49, 49);
+
+}
+
+#themes.wolfpack input {
+    accent-color: rgb(255, 49, 49);
+    cursor: pointer;
+}

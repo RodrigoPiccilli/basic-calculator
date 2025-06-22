@@ -1,0 +1,118 @@
+body.christmas {
+    background-image: url('../images/christmas.webp');
+}
+
+#calculator.christmas {
+    border-top: 10px solid rgb(150, 0, 0);
+    border-left: 10px solid rgb(150, 0, 0);
+    border-right: 10px solid rgb(23, 102, 21);
+    border-bottom: 10px solid rgb(23, 102, 21);
+}
+
+#calculator-commands .christmas button {
+    background-color: #ca0000bd;
+}
+
+#calculator-commands .christmas button:hover {
+    background-color: #ca2323bd;
+}
+
+#calculator-commands .christmas button:active {
+    background-color: #c54343bd;
+}
+
+#calculator-commands.christmas button:hover{
+    background-color: rgba(22, 102, 21, 0.715);
+}
+
+#calculator-commands.christmas button:active {
+    background-color: rgb(55, 112, 54);
+}
+
+#calculator-commands.christmas .operations button {
+    background-color: rgb(23, 102, 21);
+}
+
+#calculator-commands.christmas .operations button:hover {
+    background-color: rgba(47, 104, 46, 0.715);
+}
+
+#calculator-commands.christmas .operations button:active {
+    background-color: rgb(75, 110, 74);
+}
+
+#history.christmas {
+    border-top: 10px solid rgb(150, 0, 0);
+    border-left: 10px solid rgb(150, 0, 0);
+    border-right: 10px solid rgb(23, 102, 21);
+    border-bottom: 10px solid rgb(23, 102, 21);
+}
+
+#history-display.christmas div {
+    background-color: #ca0000bd;
+    cursor: pointer;
+    padding: 7px 0px;
+    padding-left: 10px;
+
+    border-top: 2px solid rgb(150, 0, 0);
+    border-left: 2px solid rgb(150, 0, 0);
+    border-right: 2px solid rgb(23, 102, 21);
+    border-bottom: 2px solid rgb(23, 102, 21);
+
+}
+
+#history-display.christmas div:hover {
+    background-color: #f64b4bbd;
+}
+
+#history-display.christmas div:active {
+    background-color: #ff7373bd;
+}
+
+#history-display.christmas .stripe{
+    background-color: rgb(40, 100, 39);
+    font-size: 40px;
+    padding-left: 10px;
+
+    border-top: 2px solid rgb(150, 0, 0);
+    border-left: 2px solid rgb(150, 0, 0);
+    border-right: 2px solid rgb(23, 102, 21);
+    border-bottom: 2px solid rgb(23, 102, 21);
+}
+
+#history-display.christmas .stripe:hover{
+    background-color: gray;
+}
+
+#history-display.christmas .stripe:active{
+    background-color: rgb(23, 102, 21);
+}
+
+#clear-history.christmas button {
+    background-color: #ca0000bd;
+}
+
+#clear-history.christmas button:hover {
+    background-color: #f64b4bbd;
+}
+
+#clear-history.christmas button:active {
+    background-color: #ff7373bd;
+}
+
+#settings-menu.christmas {
+    border-top: 10px solid rgb(150, 0, 0);
+    border-left: 10px solid rgb(150, 0, 0);
+    border-right: 10px solid rgb(23, 102, 21);
+    border-bottom: 10px solid rgb(23, 102, 21);
+}
+
+#show-history.christmas {
+    accent-color: rgb(23, 102, 21);
+
+}
+
+#themes.christmas input {
+    accent-color: #ca0000bd;
+    cursor: pointer;
+}

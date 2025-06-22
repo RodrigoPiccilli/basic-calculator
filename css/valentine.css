@@ -1,0 +1,120 @@
+body.valentine {
+    background-image: url("../images/valentines.jpg");
+    background-size: cover;
+}
+
+#calculator.valentine {
+    border-top: 10px solid rgb(255, 94, 215);
+    border-left: 10px solid rgb(255, 94, 215);
+    border-right: 10px solid rgb(167, 55, 139);
+    border-bottom: 10px solid rgb(167, 55, 139);
+}
+
+#calculator-commands .valentine button {
+    background-color: rgb(255, 57, 205);
+}
+
+#calculator-commands .valentine button:hover {
+    background-color: rgb(247, 93, 208);
+}
+
+#calculator-commands .valentine button:active {
+    background-color: rgb(246, 152, 222);
+}
+
+#calculator-commands.valentine button:hover{
+    background-color: rgba(254, 116, 219, 0.761);
+}
+
+#calculator-commands.valentine button:active {
+    background-color: rgb(255, 171, 234);;
+}
+
+#calculator-commands.valentine .operations button {
+    background-color: rgb(255, 57, 205);
+}
+
+#calculator-commands.valentine .operations button:hover {
+    background-color: rgb(247, 93, 208);
+}
+
+#calculator-commands.valetine .operations button:active {
+    background-color: rgb(246, 152, 222);
+}
+
+#history.valentine {
+    border-top: 10px solid rgb(255, 94, 215);
+    border-left: 10px solid rgb(255, 94, 215);
+    border-right: 10px solid rgb(167, 55, 139);
+    border-bottom: 10px solid rgb(167, 55, 139);
+}
+
+#history-display.valentine div {
+    background-color: rgb(255, 57, 205);
+    cursor: pointer;
+    padding: 7px 0px;
+    padding-left: 10px;
+
+    border-top: 2px solid rgb(255, 94, 215);
+    border-left: 2px solid rgb(255, 94, 215);
+    border-right: 2px solid rgb(167, 55, 139);
+    border-bottom: 2px solid rgb(167, 55, 139);
+
+}
+
+#history-display.valentine div:hover {
+    background-color: rgb(251, 89, 210);;
+}
+
+#history-display.valentine div:active {
+    background-color: rgb(249, 116, 216);
+}
+
+
+#history-display.valentine .stripe{
+    background-color: rgb(180, 180, 180); 
+    font-size: 40px;
+    padding-left: 10px;
+
+    border-top: 2px solid rgb(201, 201, 201);
+    border-left: 2px solid rgb(201, 201, 201);
+    border-right: 2px solid rgb(90, 90, 90);
+    border-bottom: 2px solid rgb(90, 90, 90);
+}
+
+#history-display.valentine .stripe:hover{
+    background-color: gray;
+}
+
+#history-display.valentine .stripe:active{
+    background-color: rgb(249, 116, 216);
+}
+
+#clear-history.valentine button{
+    background-color: rgb(255, 57, 205);
+}
+
+#clear-history.valentine button:hover {
+    background-color: rgb(249, 116, 216);;
+}
+
+#clear-history.valentine button:active {
+    background-color: rgb(255, 148, 228);
+}
+
+#settings-menu.valentine {
+    border-top: 10px solid rgb(255, 94, 215);
+    border-left: 10px solid rgb(255, 94, 215);
+    border-right: 10px solid rgb(167, 55, 139);
+    border-bottom: 10px solid rgb(167, 55, 139);
+}
+
+#show-history.valentine {
+    accent-color: rgb(255, 57, 205);
+
+}
+
+#themes.valentine input {
+    accent-color: rgb(255, 57, 205);
+    cursor: pointer;
+}

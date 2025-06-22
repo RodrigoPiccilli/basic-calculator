@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/calculator.css">
+    <link rel="stylesheet" href="./css/ocean.css">
+    <link rel="stylesheet" href="./css/nature.css">
+    <link rel="stylesheet" href="./css/valentine.css">
+    <link rel="stylesheet" href="./css/christmas.css">
+    <script src="./js/calculator.js" defer></script>
+    <title>Mini Project 2 Calculator</title>
+</head>
+<body class="wolfpack">
+    <div id="calculator" class="wolfpack">
+
+        <div id="calculator-display">
+    
+            <div id="calculator-input">
+                <input type="text" placeholder="0" maxlength="50" autofocus="true">
+            </div>
+    
+        </div>
+
+        <div id="calculator-commands" class="wolfpack">
+        
+            <ul>
+                <li><button id="clear">AC</button></li>
+                <li><button class="operand">7</button></li>
+                <li><button class="operand">4</button></li>
+                <li><button class="operand">1</button></li>
+                <li><button id="random">Rand</button></li>
+            </ul>
+
+            <ul>
+                <li><button id="reverse">+/-</button></li>
+                <li><button class="operand">8</button></li>
+                <li><button class="operand">5</button></li>
+                <li><button class="operand">2</button></li>
+                <li><button class="operand">0</button></li>
+            </ul>
+
+            <ul>
+                <li><button id="percent">&percnt;</button></li>
+                <li><button class="operand">9</button></li>
+                <li><button class="operand">6</button></li>
+                <li><button class="operand">3</button></li>
+                <li><button id="period">.</button></li>
+            </ul>
+
+            <div class="operations christmas">
+                <ul>
+                    <li><button class="operator" id="divide">&div;</button></li>
+                    <li><button class="operator" id="multiply">&times;</button></li>
+                    <li><button class="operator" id="subtract">-</button></li>
+                    <li><button class="operator" id="add">+</button></li>
+                    <li><button id="solve">=</button></li>
+
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="history"  class="wolfpack">
+
+        <div id="history-display" class="wolfpack"></div>
+
+        <div id="clear-history" class="wolfpack">
+
+            <button>Clear History</button>
+
+        </div>
+
+
+    </div>
+
+
+    <div id="settings-menu" class="wolfpack">
+
+        <h3>Settings</h3>
+
+        <label>Show History<input type="checkbox" id="show-history" checked class="wolfpack"></label>
+
+       
+        <form id="themes" class="wolfpack">
+            <h3>Themes</h3>
+            <label>
+                WOLFPACK
+              <input type="radio" name="choice" value="WOLFPACK" checked>
+            </label><br>
+          
+            <label>
+                OCEAN
+              <input  type="radio" name="choice" value="OCEAN">
+            </label><br>
+          
+            <label>
+                NATURE
+              <input type="radio" name="choice" value="NATURE">
+            </label><br>
+
+            <label>
+                VALENTINE
+              <input type="radio" name="choice" value="VALENTINE">
+            </label>
+
+            <label>
+                CHRISTMAS
+              <input type="radio" name="choice" value="CHRISTMAS">
+            </label>
+        </form>
+
+    </div>
+    
+</body>
+</html>
